@@ -1,0 +1,42 @@
+@import '../../../styles.scss';
+
+mat-toolbar-row {
+  justify-content: space-between;
+}
+
+.logo {
+  color: white;
+  text-align: right;
+  display: flex;
+  align-items: center;
+
+  &__colorLetter {
+    color: mat-color($accent);
+  }
+
+  &__second-word {
+    margin-top: -0.3rem !important;
+  }
+
+  &__image {
+    display: flex;
+  }
+
+  h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 1.5rem;
+  }
+}
+
+.toolbar-right {
+  fa {
+    color: white;
+    cursor: pointer;
+    padding-left: 15px;
+    font-size: 1.8rem;
+
+    &:hover {
+      color: mat-color($accent);
+    }
+  }
+}
