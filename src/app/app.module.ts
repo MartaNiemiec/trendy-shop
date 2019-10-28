@@ -9,13 +9,15 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LandingPageItemComponent } from './landing-page/landing-page-item/landing-page-item.component';
+import { FooterComponent } from './core/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     LandingPageComponent,
-    LandingPageItemComponent
+    LandingPageItemComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
