@@ -1,0 +1,15 @@
+div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+app-landing-page-item {
+  width: 50%;
+  height: 250px;
+  background-size: cover;
+
+  &:last-child {
+    width: 100%;
+    background-image: linear-gradient(to right, rgba(241, 6, 6, 0.5), rgba(241, 6, 6, 0.5)), url("../../assets/images/sale.jpg") !important;
+  }
+}

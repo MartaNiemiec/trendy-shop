@@ -7,11 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './core/toolbar/toolbar.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { LandingPageComponent } from './landing-page/landing-page.component';
+import { LandingPageItemComponent } from './landing-page/landing-page-item/landing-page-item.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ToolbarComponent
+    ToolbarComponent,
+    LandingPageComponent,
+    LandingPageItemComponent
   ],
   imports: [
     BrowserModule,
@@ -23,4 +27,4 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

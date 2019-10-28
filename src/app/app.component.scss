@@ -1,2 +1,6 @@
 @import '../styles.scss';
 
+.app-wrapper {
+  min-height: 100vh;
+  background-image: url("../assets/images/white_wall_hash.png");
+}
