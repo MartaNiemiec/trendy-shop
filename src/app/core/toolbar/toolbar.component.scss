@@ -1,14 +1,8 @@
 @import '../../../styles.scss';
 
-mat-toolbar-row {
-  justify-content: space-between;
-}
-
 .logo {
   color: white;
   text-align: right;
-  display: flex;
-  align-items: center;
 
   &__colorLetter {
     color: mat-color($accent);
@@ -16,10 +10,6 @@ mat-toolbar-row {
 
   &__second-word {
     margin-top: -0.3rem !important;
-  }
-
-  &__image {
-    display: flex;
   }
 
   h1 {

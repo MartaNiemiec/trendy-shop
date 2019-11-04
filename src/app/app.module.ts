@@ -10,6 +10,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LandingPageItemComponent } from './landing-page/landing-page-item/landing-page-item.component';
 import { FooterComponent } from './core/footer/footer.component';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { FooterComponent } from './core/footer/footer.component';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    FlexLayoutModule
   ],
   providers: [],
   bootstrap: [AppComponent]

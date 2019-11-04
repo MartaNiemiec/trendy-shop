@@ -1,8 +1,6 @@
 @import '../../../styles.scss';
 
 footer {
-  display: flex;
-  align-items: center;
   height: 2.5rem;
   background-color: mat-color($primary);
 }
@@ -17,9 +15,6 @@ fa {
 }
 
 .content-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   color: white;
 }
