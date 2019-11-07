@@ -1,7 +1,8 @@
 @import 'src/styles/themes/theme';
+@import 'src/styles/abstracts/variables';
 
 footer {
-  height: 2.5rem;
+  height: $footer-height;
   background-color: mat-color($primary);
 }
 
@@ -16,7 +17,7 @@ fa {
 
 .content-container {
   width: 100%;
-  color: white;
+  color: $color-white;
 }
 
 .social {

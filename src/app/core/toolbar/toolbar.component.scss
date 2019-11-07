@@ -1,8 +1,9 @@
 @import 'src/styles/themes/theme';
 @import 'src/styles/base/typography';
+@import 'src/styles/abstracts/variables';
 
 .logo {
-  color: white;
+  color: $color-white;
   text-align: right;
 
   &__colorLetter {
@@ -16,7 +17,7 @@
 
 .toolbar-right {
   fa {
-    color: white;
+    color: $color-white;
     cursor: pointer;
     padding-left: 15px;
     font-size: 1.8rem;

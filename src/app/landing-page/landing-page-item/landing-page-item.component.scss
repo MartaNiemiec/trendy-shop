@@ -1,11 +1,12 @@
 @import 'src/styles/themes/theme';
+@import 'src/styles/abstracts/variables';
 
 button {
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
+  background-color: $color-black-overlay;
+  color: $color-white;
   letter-spacing: 0.1rem;
   padding: 0.5rem 1rem;
-  border: 1px solid white;
+  border: 1px solid $color-white;
   text-transform: uppercase;
   outline: none;
   cursor: pointer;
@@ -13,7 +14,7 @@ button {
 
   &:hover {
     background-color: mat-color($accent);
-    border: 1px solid transparent;
+    border: 1px solid $color-transparent;
   }
 }
 

@@ -1,10 +1,19 @@
+@import 'src/styles/abstracts/variables';
+@import 'src/styles/abstracts/mixins';
+
 app-landing-page-item {
   width: 50%;
-  height: 250px;
+  height: calc((100vh - #{$toolbar-height} - #{$footer-height}) / 3);
   background-size: cover;
+  background-position: center;
 
   &:last-child {
     width: 100%;
-    background-image: linear-gradient(to right, rgba(241, 6, 6, 0.5), rgba(241, 6, 6, 0.5)), url("../../assets/images/sale.jpg") !important;
+    background-image: linear-gradient(
+        to right,
+        $color-red-overlay,
+        $color-red-overlay
+      ),
+      url('../../assets/images/sale.jpg') !important;
   }
 }
