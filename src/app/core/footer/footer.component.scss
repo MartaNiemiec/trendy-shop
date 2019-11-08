@@ -1,9 +1,14 @@
 @import 'src/styles/themes/theme';
 @import 'src/styles/abstracts/variables';
+@import 'src/styles/abstracts/mixins';
 
 footer {
   height: $footer-height;
   background-color: mat-color($primary);
+
+  @include breakpoint(xs) {
+    height: $footer-height-mobile;
+  }
 }
 
 fa {
@@ -22,4 +27,9 @@ fa {
 
 .social {
   padding-left: 30px;
+
+  @include breakpoint(xs) {
+    padding-left: 0;
+    margin-top: 10px;
+  }
 }

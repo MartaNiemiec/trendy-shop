@@ -1,6 +1,7 @@
 @import 'src/styles/themes/theme';
 @import 'src/styles/base/typography';
 @import 'src/styles/abstracts/variables';
+@import 'src/styles/abstracts/mixins';
 
 .logo {
   color: $color-white;
@@ -12,6 +13,13 @@
 
   &__second-word {
     margin-top: -0.3rem !important;
+  }
+
+  &__image {
+    height: 50px;
+    @include breakpoint(xs) {
+      height: 45px;
+    }
   }
 }
 

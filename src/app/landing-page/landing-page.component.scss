@@ -7,6 +7,10 @@ app-landing-page-item {
   background-size: cover;
   background-position: center;
 
+  @include breakpoint(xs) {
+    width: 100%;
+  }
+
   &:last-child {
     width: 100%;
     background-image: linear-gradient(
