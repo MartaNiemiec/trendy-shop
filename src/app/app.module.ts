@@ -11,6 +11,9 @@ import { LandingPageComponent } from './landing-page/landing-page.component';
 import { LandingPageItemComponent } from './landing-page/landing-page-item/landing-page-item.component';
 import { FooterComponent } from './core/footer/footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { ProductsComponent } from './products/products.component';
+import { ProductComponent } from './products/product/product.component';
+import { ProductInfoComponent } from './products/product/product-info/product-info.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     ToolbarComponent,
     LandingPageComponent,
     LandingPageItemComponent,
-    FooterComponent
+    FooterComponent,
+    ProductsComponent,
+    ProductComponent,
+    ProductInfoComponent
   ],
   imports: [
     BrowserModule,
