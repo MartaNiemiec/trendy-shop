@@ -1,0 +1,12 @@
+@import 'src/styles/abstracts/variables';
+
+.products {
+  min-height: calc(100vh - #{$toolbar-height} - #{$footer-height});
+  padding: 20px;
+  background-color: $color-white;
+
+  &__title {
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+  }
+}
