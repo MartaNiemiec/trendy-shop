@@ -1,6 +1,20 @@
 <div class="products">
-  <h1 class="products__title">{{ activePath }}</h1>
+  <!-- <h1 class="products__title">{{ activePath }}</h1> -->
+  <ul class="products__menu" fxLayout="row wrap" fxLayoutAlign="space-around center">
+    <a routerLink="/ladies" routerLinkActive="active-link"><li class="menu__ladies">ladies</li></a>
+    <a routerLink="/men" routerLinkActive="active-link"><li class="menu__men">men</li></a>
+    <a routerLink="/kids" routerLinkActive="active-link"><li class="menu__kids">kids</li></a>
+    <a routerLink="/home" routerLinkActive="active-link"><li class="menu__home">home</li></a>
+    <a routerLink="/sale" routerLinkActive="active-link"><li class="menu__sale">sale</li></a>
+  </ul>
 
-  <app-product></app-product>
+  <span class="products__list" fxLayout="row wrap" fxLayoutAlign="center start">
+    <app-product></app-product>
+    <app-product></app-product>
+    <app-product></app-product>
+    <app-product></app-product>
+    <app-product></app-product>
+    <app-product></app-product>
+  </span>
 
 </div>

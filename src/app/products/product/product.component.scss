@@ -1,0 +1,44 @@
+@import 'src/styles/themes/theme';
+@import 'src/styles/abstracts/variables';
+
+mat-card {
+  width: $card-width;
+  padding: 0;
+  margin: 20px;
+  color: $color-grey !important;
+}
+
+.product {
+  &__image {
+    width: $card-width;
+    height: auto;
+  }
+
+  &__content {
+    padding: 10px;
+  }
+
+  &__price {
+    &--reduced {
+      color: $color-red;
+    }
+
+    &--previous {
+      text-decoration: line-through;
+      padding-left: 5px;
+    }
+  }
+}
+
+
+fa {
+  color: $color-lightgrey;
+  cursor: pointer;
+  padding-left: 15px;
+  font-size: 1.2rem;
+
+  &:hover {
+    color: mat-color($accent);
+    transition: color .2s linear;
+  }
+}

@@ -2,7 +2,11 @@
 $color-white: #fff;
 $color-transparent: transparent;
 $color-red-overlay: rgba(241, 6, 6, 0.5);
+$color-red: red;
 $color-black-overlay: rgba(0, 0, 0, 0.5);
+$color-grey: #676767;
+$color-lightgrey: #C6C6C6;
+
 
 
 // LAYOUT
@@ -10,3 +14,6 @@ $toolbar-height: 64px;
 $toolbar-height-mobile: 56px; //max-width: 599px / breakpoint==xs
 $footer-height: 40px;
 $footer-height-mobile: 90px;
+
+
+$card-width: 200px;

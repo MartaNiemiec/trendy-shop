@@ -16,3 +16,15 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+
+button {
+  border: none;
+  background-color: inherit;
+  outline: none;
+  font: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
