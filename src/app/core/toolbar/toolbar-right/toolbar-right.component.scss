@@ -2,15 +2,27 @@
 @import 'src/styles/abstracts/variables';
 
 .toolbar-right {
-    fa {
-      color: $color-white;
-      cursor: pointer;
-      padding-left: 15px;
-      font-size: 1.8rem;
+  fa {
+    color: $color-white;
+    cursor: pointer;
+    padding-left: 15px;
+    font-size: 1.8rem;
 
-      &:hover {
-        color: mat-color($accent);
-        transition: color .2s linear;
-      }
+    &:hover {
+      color: mat-color($accent);
+      transition: color .2s linear;
     }
   }
+}
+
+.mat-menu-item {
+  &:hover {
+    background-color: mat-color($accent) !important;
+    color: $color-white;
+  }
+
+  fa {
+    font-size: 1.2rem;
+    padding-right: .2rem;
+  }
+}

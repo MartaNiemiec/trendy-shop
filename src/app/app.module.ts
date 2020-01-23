@@ -15,6 +15,7 @@ import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './products/product/product.component';
 import { ProductInfoComponent } from './products/product/product-info/product-info.component';
 import { MatCardModule } from '@angular/material/card';
+import { MatMenuModule } from '@angular/material/menu';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
 import { ToolbarRightComponent } from './core/toolbar/toolbar-right/toolbar-right.component';
@@ -40,7 +41,8 @@ import { ToolbarRightComponent } from './core/toolbar/toolbar-right/toolbar-righ
     MatToolbarModule,
     AngularFontAwesomeModule,
     FlexLayoutModule,
-    MatCardModule
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,19 @@
 <div class="toolbar-right">
   <fa name="heart"></fa>
   <fa name="shopping-cart"></fa>
-  <fa name="user"></fa>
+  <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+    <fa name="user"></fa>
+  </button>
+  <mat-menu #menu="matMenu" color="primary">
+    <button mat-menu-item color="primary" routerLink="login">
+      <!-- <!-- <fa name="sign-in"></!-->
+      <span> Login</span>
+    </button>
+    <button mat-menu-item routerLink="signup">
+      <!-- <fa name="user-plus"></fa> -->
+      <span> Sign Up</span>
+
+    </button>
+  </mat-menu>
+
 </div>
