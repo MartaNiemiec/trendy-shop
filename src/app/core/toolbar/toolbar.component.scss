@@ -22,17 +22,3 @@
     }
   }
 }
-
-.toolbar-right {
-  fa {
-    color: $color-white;
-    cursor: pointer;
-    padding-left: 15px;
-    font-size: 1.8rem;
-
-    &:hover {
-      color: mat-color($accent);
-      transition: color .2s linear;
-    }
-  }
-}

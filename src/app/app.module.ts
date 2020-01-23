@@ -17,6 +17,7 @@ import { ProductInfoComponent } from './products/product/product-info/product-in
 import { MatCardModule } from '@angular/material/card';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
+import { ToolbarRightComponent } from './core/toolbar/toolbar-right/toolbar-right.component';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { LoginComponent } from './auth/login/login.component';
     ProductComponent,
     ProductInfoComponent,
     SignupComponent,
-    LoginComponent
+    LoginComponent,
+    ToolbarRightComponent
   ],
   imports: [
     BrowserModule,

@@ -19,6 +19,7 @@ body {
 
 .page-content {
   min-height: calc(100vh - #{$toolbar-height} - #{$footer-height});
+  background-color: $color-white;
 }
 
 button {
