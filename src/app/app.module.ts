@@ -15,6 +15,8 @@ import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './products/product/product.component';
 import { ProductInfoComponent } from './products/product/product-info/product-info.component';
 import { MatCardModule } from '@angular/material/card';
+import { SignupComponent } from './auth/signup/signup.component';
+import { LoginComponent } from './auth/login/login.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,9 @@ import { MatCardModule } from '@angular/material/card';
     FooterComponent,
     ProductsComponent,
     ProductComponent,
-    ProductInfoComponent
+    ProductInfoComponent,
+    SignupComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

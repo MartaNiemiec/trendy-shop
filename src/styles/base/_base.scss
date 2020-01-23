@@ -17,6 +17,10 @@ body {
   margin: 0 auto;
 }
 
+.page-content {
+  min-height: calc(100vh - #{$toolbar-height} - #{$footer-height});
+}
+
 button {
   border: none;
   background-color: inherit;
