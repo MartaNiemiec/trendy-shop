@@ -33,3 +33,16 @@ a {
   text-decoration: none;
   color: inherit;
 }
+
+// FORMS
+.form-button {
+  color: $color-white !important;
+}
+
+form {
+  padding-top: 1.5rem;
+}
+
+mat-form-field {
+  width: 300px;
+}
