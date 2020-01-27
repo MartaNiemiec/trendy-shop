@@ -1,0 +1,86 @@
+{
+  "productsData": [
+    {
+      "department": "ladies",
+      "products": [
+        {
+          "name": "blouse",
+          "normalPrice": 23.5,
+          "reducedPrice": 15.99,
+          "img": "blouse.jpg"
+        },
+        {
+          "name": "white dress",
+          "normalPrice": 22.55,
+          "img": "white-dress.jpg"
+        },
+        {
+          "name": "white blouse",
+          "normalPrice": 20.0,
+          "reducedPrice": 13.5,
+          "img": "blouse-white.jpg"
+        },
+        {
+          "name": "casual dress",
+          "normalPrice": 21.49,
+          "reducedPrice": 15,
+          "img": "casual-dress.jpg"
+        },
+        {
+          "name": "sweater",
+          "normalPrice": 24.55,
+          "reducedPrice": 14,
+          "img": "sweater.jpg"
+        },
+        {
+          "name": "dark dress",
+          "normalPrice": 25.39,
+          "reducedPrice": 15.5,
+          "img": "dark-dress.jpg"
+        },
+        {
+          "name": "denim jacket",
+          "normalPrice": 22.35,
+          "img": "denim-jacket2.jpg"
+        },
+        {
+          "name": "green dress",
+          "normalPrice": 19.99,
+          "img": "green-dress.jpg"
+        },
+        {
+          "name": "summer dress",
+          "normalPrice": 18.59,
+          "img": "summer-dress.jpg"
+        },
+        {
+          "name": "yellow-jacket",
+          "normalPrice": 29.99,
+          "img": "yellow-jacket.jpg"
+        },
+        {
+          "name": "denim jacket",
+          "normalPrice": 24.55,
+          "reducedPrice": 15.99,
+          "img": "denim-jacket.jpg"
+        }
+      ]
+    },
+    {
+      "department": "men",
+      "products": []
+    },
+    {
+      "department": "kids",
+      "products": []
+    },
+    {
+      "department": "home",
+      "products": []
+    },
+    {
+      "department": "sale",
+      "products": []
+    }
+  ]
+}

@@ -1,15 +1,15 @@
 <mat-card class="product">
-  <img class="product__image" src="../../../assets/images/products/white-dress.jpg" alt="White dress photo">
+  <img class="product__image" src="../../../assets/images/products/{{productObject.img}}" alt="White dress photo">
   <div class="product__content" fxLayout fxLayoutAlign="space-between center">
     <span>
-      <p>White dress</p>
-      <p>
-        <span class="product__price--reduced">$15.99</span>
-        <span class="product__price--previous">$23.00</span>
+      <p>{{ productName }}</p>
+      <p *ngIf="productReducedPrice">
+        <span class="product__price--reduced">${{productReducedPrice}}</span>
+        <span class="product__price--previous">${{productNormalPrice}}</span>
       </p>
-      <!-- <mat-card-subtitle>
-          <span class="product__price--normal">$23.00</span>
-      </mat-card-subtitle> -->
+      <p *ngIf="!productReducedPrice">
+        <span class="product__price--normal">$23.00</span>
+      </p>
     </span>
 
     <div class="buttons">

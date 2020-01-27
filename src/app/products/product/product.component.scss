@@ -9,6 +9,8 @@ mat-card {
 }
 
 .product {
+  overflow: hidden;
+  margin: 13px ;
   &__image {
     width: $card-width;
     height: auto;

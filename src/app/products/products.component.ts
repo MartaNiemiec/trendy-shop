@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
+import productsJson from '../../assets/products.json'
 
 @Component({
   selector: 'app-products',
@@ -8,13 +9,16 @@ import { ActivatedRoute } from "@angular/router";
 })
 export class ProductsComponent implements OnInit {
   activePath: string;
+  currentProducts : object;
 
   constructor(public route: ActivatedRoute) {
     this.route.url.subscribe(params => {
       this.activePath = params[0].path;
-      console.log("this.activePath: >>>", this.activePath);
     })
-   }
+    this.currentProducts = [...productsJson.productsData.filter(dep => {
+      return dep.department === this.activePath
+    })[0].products]
+  }
 
   ngOnInit() {
   }
