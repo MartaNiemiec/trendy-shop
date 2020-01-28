@@ -10,9 +10,9 @@ mat-card {
 
 .product {
   overflow: hidden;
-  margin: 13px ;
+  margin: 10px ;
   &__image {
-    width: $card-width;
+    width: 100%;
     height: auto;
   }
 
@@ -32,11 +32,10 @@ mat-card {
   }
 }
 
-
 fa {
   color: $color-lightgrey;
   cursor: pointer;
-  padding-left: 15px;
+  padding-left: 10px;
   font-size: 1.2rem;
 
   &:hover {

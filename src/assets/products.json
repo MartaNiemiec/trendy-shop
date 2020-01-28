@@ -68,7 +68,63 @@
     },
     {
       "department": "men",
-      "products": []
+      "products": [
+        {
+          "name": "black jeans",
+          "normalPrice": 26.55,
+          "reducedPrice": 19.5,
+          "img": "man-black-jeans.jpg"
+        },
+        {
+          "name": "denim jacket",
+          "normalPrice": 24.99,
+          "img": "man-denim-jacket.jpg"
+        },
+        {
+          "name": "denim retro jacket",
+          "normalPrice": 23.49,
+          "reducedPrice": 18,
+          "img": "man-denim-retro-jacket.jpg"
+        },
+        {
+          "name": "plain denim jacket",
+          "normalPrice": 25.39,
+          "reducedPrice": 18.5,
+          "img": "man-denim-jacket-3.jpg"
+        },
+        {
+          "name": "Light denim shirt",
+          "normalPrice": 19.6,
+          "img": "man-denim-shirt.jpg"
+        },
+        {
+          "name": "flannel shirt",
+          "normalPrice": 18.49,
+          "reducedPrice": 13.5,
+          "img": "man-flannel-shirt.jpg"
+        },
+        {
+          "name": "long sleeve shirt",
+          "normalPrice": 19.89,
+          "img": "man-long-sleeve-shirt.jpg"
+        },
+        {
+          "name": "flowers t-shirt",
+          "normalPrice": 17,
+          "reducedPrice": 12.7,
+          "img": "man-tshirt-flowers.jpg"
+        },
+        {
+          "name": "grey striped t-shirt",
+          "normalPrice": 15.5,
+          "img": "man-tshirt-grey.jpg"
+        },
+        {
+          "name": "khaki t-shirt",
+          "normalPrice": 14.79,
+          "img": "man-tshirt-plain.jpg"
+        }
+      ]
     },
     {
       "department": "kids",
