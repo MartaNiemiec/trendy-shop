@@ -128,7 +128,76 @@
     },
     {
       "department": "kids",
-      "products": []
+      "products": [
+        {
+          "name": "blue sweatshirt",
+          "normalPrice": 18.29,
+          "reducedPrice": 13,
+          "img": "kids-blue-sweatshirt.jpg"
+        },
+        { "name": "blue stripped t-shirt",
+          "normalPrice": 15.59,
+          "reducedPrice": 9.5,
+          "img": "kids-boy-blue-stripped-tshirt.jpg"
+        },
+        {
+          "name": "flannel shirt",
+          "normalPrice": 16.79,
+          "reducedPrice": 12,
+          "img": "kids-boy-flannel-shirt.jpg"
+        },
+        {
+          "name": "green shirt",
+          "normalPrice": 11.49,
+          "img": "kids-boy-green-shirt.jpg"
+        },
+        {
+          "name": "sweater",
+          "normalPrice": 15.39,
+          "img": "kids-boy-sweater.jpg"
+        },
+        {
+          "name": "t-shirt",
+          "normalPrice": 11.29,
+          "reducedPrice": 8.5,
+          "img": "kids-boy-tshirt.jpg"
+        },
+        {
+          "name": "denim blouse",
+          "normalPrice": 13.49,
+          "img": "kids-girl-denim-blouse.jpg"
+        },
+        {
+          "name": "dress",
+          "normalPrice": 11.50,
+          "reducedPrice": 8,
+          "img": "kids-girl-dress.jpg"
+        },
+        {
+          "name": "jeans",
+          "normalPrice": 15.59,
+          "reducedPrice": 11,
+          "img": "kids-girl-jeans.jpg"
+        },
+        {
+          "name": "skirt",
+          "normalPrice": 14.55,
+          "reducedPrice": 10.5,
+          "img": "kids-girl-skirt.jpg"
+        },
+        {
+          "name": "yellow hoodie",
+          "normalPrice": 13.19,
+          "reducedPrice": 9.5,
+          "img": "kids-girl-yellow-hoodie.jpg"
+        },
+        {
+          "name": "white banana t-shirt",
+          "normalPrice": 10.29,
+          "img": "kids-girl-white-banana-tshirt.jpg"
+        }
+
+      ]
     },
     {
       "department": "home",
