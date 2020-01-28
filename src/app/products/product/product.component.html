@@ -4,11 +4,11 @@
     <span>
       <p>{{ productName }}</p>
       <p *ngIf="productReducedPrice">
-        <span class="product__price--reduced">${{productReducedPrice}}</span>
-        <span class="product__price--previous">${{productNormalPrice}}</span>
+        <span class="product__price--reduced">${{productReducedPrice.toFixed(2)}}</span>
+        <span class="product__price--previous">${{productNormalPrice.toFixed(2)}}</span>
       </p>
       <p *ngIf="!productReducedPrice">
-        <span class="product__price--normal">${{productNormalPrice}}</span>
+        <span class="product__price--normal">${{productNormalPrice.toFixed(2)}}</span>
       </p>
     </span>
 

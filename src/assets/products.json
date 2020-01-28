@@ -135,7 +135,8 @@
           "reducedPrice": 13,
           "img": "kids-blue-sweatshirt.jpg"
         },
-        { "name": "blue stripped t-shirt",
+        {
+          "name": "blue stripped t-shirt",
           "normalPrice": 15.59,
           "reducedPrice": 9.5,
           "img": "kids-boy-blue-stripped-tshirt.jpg"
@@ -196,12 +197,90 @@
           "normalPrice": 10.29,
           "img": "kids-girl-white-banana-tshirt.jpg"
         }
-
       ]
     },
     {
       "department": "home",
-      "products": []
+      "products": [
+        {
+          "name": "blue pillow",
+          "normalPrice": 25.49,
+          "reducedPrice": 19.99,
+          "img": "home-blue-pillow.jpg"
+        },
+        {
+          "name": "bonsai",
+          "normalPrice": 23.79,
+          "img": "home-bonsai.jpg"
+        },
+        {
+          "name": "cactus pillow",
+          "normalPrice": 28.99,
+          "reducedPrice": 25,
+          "img": "home-cactus-pillow.jpg"
+        },
+        {
+          "name": "clock",
+          "normalPrice": 35.55,
+          "reducedPrice": 31,
+          "img": "home-clock.jpg"
+        },
+        {
+          "name": "colorful pillow",
+          "normalPrice": 22.65,
+          "img": "home-colorful-pillow.jpg"
+        },
+        {
+          "name": "dark blanket",
+          "normalPrice": 39.89,
+          "reducedPrice": 35,
+          "img": "home-dark-blanket.jpg"
+        },
+        {
+          "name": "deer pillow",
+          "normalPrice": 28.25,
+          "reducedPrice": 25,
+          "img": "home-deer-pillow.jpg"
+        },
+        {
+          "name": "plant",
+          "normalPrice": 18.49,
+          "img": "home-plant.jpg"
+        },
+        {
+          "name": "wood quote board",
+          "normalPrice": 14.45,
+          "reducedPrice": 11,
+          "img": "home-quote-board.jpg"
+        },
+        {
+          "name": "quote board",
+          "normalPrice": 16.55,
+          "img": "home-quote-board2.jpg"
+        },
+        {
+          "name": "wall calendar",
+          "normalPrice": 15,
+          "img": "home-wall-calendar.jpg"
+        },
+        {
+          "name": "wall clock",
+          "normalPrice": 38.59,
+          "reducedPrice": 35,
+          "img": "home-wall-clock.jpg"
+        },
+        {
+          "name": "striped blanket",
+          "normalPrice": 36.20,
+          "reducedPrice": 32,
+          "img": "home-white-striped-blanket.jpg"
+        },
+        {
+          "name": "quote calendar",
+          "normalPrice": 11.39,
+          "img": "home-quote-calendar.jpg"
+        }
+      ]
     },
     {
       "department": "sale",
