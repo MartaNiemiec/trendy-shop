@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from "@angular/router";
 import productsJson from '../../assets/products.json'
 
@@ -8,21 +8,33 @@ import productsJson from '../../assets/products.json'
   styleUrls: ['./products.component.scss']
 })
 export class ProductsComponent implements OnInit {
-  activePath: string;
-  currentProducts : object;
+  activeRoute: string;
+  currentProducts: object;
+  salesArrays = [];
+  salesProducts = [];
 
   constructor(public route: ActivatedRoute) {
     this.route.url.subscribe(params => {
-      this.activePath = params[0].path;
+      this.activeRoute = params[0].path;
     })
-    this.currentProducts = [...productsJson.productsData.filter(dep => {
-      return dep.department === this.activePath
-    })[0].products]
+
+    // An array with reduced-price products from all departments
+    this.salesArrays = productsJson.productsData.map(department => department.products.filter(product => product.reducedPrice))
+
+    // Concatenate every array from salesArrays into salesProducts array
+    this.salesArrays.map(array => {
+      this.salesProducts = this.salesProducts.concat(array)
+    })
+
+    // Display specific products depending on activeRoute
+    this.activeRoute === "sale"
+      ? this.currentProducts = this.salesProducts
+      : this.currentProducts = [...productsJson.productsData.filter(dep => {
+        return dep.department === this.activeRoute
+      })[0].products]
   }
 
   ngOnInit() {
   }
-
-
 
 }
