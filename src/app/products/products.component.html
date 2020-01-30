@@ -1,5 +1,6 @@
 <div class="products page-content">
-  <ul class="products__menu" fxLayout="row wrap" fxLayoutAlign="space-around center">
+  <h1 class="products__activeDepartment" fxHide.gt-xs>{{ activeRoute }}</h1>
+  <ul class="products__menu" fxLayout="row wrap" fxLayoutAlign="space-around center" fxHide.xs>
     <a routerLink="/ladies" routerLinkActive="active-link"><li class="menu__ladies">ladies</li></a>
     <a routerLink="/men" routerLinkActive="active-link"><li class="menu__men">men</li></a>
     <a routerLink="/kids" routerLinkActive="active-link"><li class="menu__kids">kids</li></a>

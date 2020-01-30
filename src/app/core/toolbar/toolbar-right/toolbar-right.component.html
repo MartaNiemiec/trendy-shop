@@ -1,19 +1,19 @@
-<div class="toolbar-right">
-  <button mat-icon-button>
+<div class="toolbar-right" fxHide.xs>
+  <button mat-icon-button class="toolbar__icon">
     <fa name="heart"></fa>
   </button>
-  <button mat-icon-button>
+  <button mat-icon-button class="toolbar__icon">
     <fa name="shopping-cart"></fa>
   </button>
-  <button mat-icon-button [matMenuTriggerFor]="userMenu">
+  <button mat-icon-button [matMenuTriggerFor]="userMenu" class="toolbar__icon">
     <fa name="user"></fa>
   </button>
   <mat-menu #userMenu="matMenu" color="primary">
-    <button mat-menu-item color="primary" routerLink="login">
+    <button mat-menu-item color="primary" routerLink="login" class="menu-item">
       <!-- <!-- <fa name="sign-in"></!-->
       <span> Login</span>
     </button>
-    <button mat-menu-item routerLink="signup">
+    <button mat-menu-item routerLink="signup" class="menu-item">
       <!-- <fa name="user-plus"></fa> -->
       <span> Sign Up</span>
     </button>

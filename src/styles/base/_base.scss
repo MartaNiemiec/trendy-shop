@@ -1,3 +1,5 @@
+@import '../themes/theme';
+
 html,
 body {
   height: 100%;
@@ -45,4 +47,25 @@ form {
 
 mat-form-field {
   width: 300px;
+}
+
+.toolbar__icon {
+  fa {
+    color: $color-white;
+    font-size: 1.8rem;
+
+    &:hover {
+      color: mat-color($accent);
+      transition: color .2s linear;
+    }
+  }
+}
+
+.menu-item {
+  color: $color-grey !important;
+
+  &:hover {
+    background-color: mat-color($accent) !important;
+    color: $color-white !important;
+  }
 }

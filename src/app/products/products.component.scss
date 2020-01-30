@@ -1,12 +1,12 @@
-@import 'src/styles/themes/theme';
-@import 'src/styles/abstracts/variables';
+@import "src/styles/themes/theme";
+@import "src/styles/abstracts/variables";
 
 .products {
   margin: 0 auto;
 
   &__title {
     text-transform: uppercase;
-    letter-spacing: .2rem;
+    letter-spacing: 0.2rem;
   }
 
   &__menu {
@@ -25,6 +25,16 @@
   &__list {
     padding: 20px 0;
   }
+
+  &__activeDepartment {
+    padding-top: 20px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: 0 20px;
+    font-weight: normal;
+    color: mat-color($accent);
+    text-transform: uppercase;
+  }
 }
 
 a {
@@ -32,15 +42,15 @@ a {
 }
 
 .active-link,
-a:hover {
+a:hover,
+.products__activeDepartment {
   color: mat-color($accent);
   border-bottom: 1px solid mat-color($accent);
 }
 
 a:hover {
-  transition: border-bottom .2s, color .2s  linear;
+  transition: border-bottom 0.2s, color 0.2s linear;
 }
-
 
 li {
   display: inline-block;

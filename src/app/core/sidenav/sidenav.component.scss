@@ -1,0 +1,30 @@
+@import "src/styles/themes/theme";
+@import "src/styles/abstracts/variables";
+
+mat-nav-list {
+  width: 250px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: white;
+
+  //FULL HEIGHT SIDENAV
+    // display: flex;
+    // justify-content: space-around;
+    // &>* {
+    //   align-items: center;
+    //   flex-grow: 1;
+    //   display: flex;
+    // }
+}
+
+.menu-item {
+  text-transform: uppercase;
+  color: $color-grey;
+}
+
+.active-link{
+  background-color: mat-color($accent) !important;
+  color: $color-white !important;
+}

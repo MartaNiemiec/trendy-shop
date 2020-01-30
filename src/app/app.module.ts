@@ -18,6 +18,7 @@ import { ProductInfoComponent } from './products/product/product-info/product-in
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
 import { ToolbarRightComponent } from './core/toolbar/toolbar-right/toolbar-right.component';
+import { SidenavComponent } from './core/sidenav/sidenav.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ToolbarRightComponent } from './core/toolbar/toolbar-right/toolbar-righ
     ProductInfoComponent,
     SignupComponent,
     LoginComponent,
-    ToolbarRightComponent
+    ToolbarRightComponent,
+    SidenavComponent
   ],
   imports: [
     BrowserModule,
