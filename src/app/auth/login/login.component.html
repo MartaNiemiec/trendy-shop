@@ -1,10 +1,12 @@
-<div class="content-container page-content" fxLayoutAlign="center">
+<div class="content-container page-content" >
+
   <form
     fxLayout="column"
     fxLayoutAlign="top center"
     fxLayoutGap="10px"
     [formGroup]="loginForm"
     (ngSubmit)="onSubmit()" >
+    <h1 class="page-title page-title__form">Login</h1>
     <mat-form-field>
       <input
         matInput

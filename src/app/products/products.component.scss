@@ -26,15 +26,6 @@
     padding: 20px 0;
   }
 
-  &__activeDepartment {
-    padding-top: 20px;
-    text-align: center;
-    letter-spacing: 3px;
-    margin: 0 20px;
-    font-weight: normal;
-    color: mat-color($accent);
-    text-transform: uppercase;
-  }
 }
 
 a {
@@ -42,8 +33,7 @@ a {
 }
 
 .active-link,
-a:hover,
-.products__activeDepartment {
+a:hover {
   color: mat-color($accent);
   border-bottom: 1px solid mat-color($accent);
 }

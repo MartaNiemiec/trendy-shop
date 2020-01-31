@@ -69,3 +69,18 @@ mat-form-field {
     color: $color-white !important;
   }
 }
+
+.page-title {
+  padding-top: 20px;
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 0 20px;
+  font-weight: normal;
+  color: mat-color($accent);
+  text-transform: uppercase;
+  border-bottom: 1px solid mat-color($accent);
+
+  &__form {
+    width: 200px;
+  }
+}
