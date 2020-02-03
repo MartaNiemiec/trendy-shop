@@ -1,9 +1,9 @@
 <div class="toolbar-right" fxHide.xs>
   <button mat-icon-button class="toolbar__icon" routerLink="wishlist">
-    <fa name="heart"></fa>
+    <fa matBadge="1" matBadgeColor="accent" name="heart"></fa>
   </button>
-  <button mat-icon-button class="toolbar__icon" routerLink="cart">
-    <fa name="shopping-cart"></fa>
+  <button mat-icon-button class="toolbar__icon" routerLink="cart" >
+    <fa matBadge="3" matBadgeColor="accent" name="shopping-cart"></fa>
   </button>
   <button mat-icon-button [matMenuTriggerFor]="userMenu" class="toolbar__icon">
     <fa name="user"></fa>
