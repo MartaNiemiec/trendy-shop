@@ -21,6 +21,7 @@ import { ToolbarRightComponent } from './core/toolbar/toolbar-right/toolbar-righ
 import { SidenavComponent } from './core/sidenav/sidenav.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { CartComponent } from './cart/cart.component';
+import { AuthService } from './auth/auth.service';
 
 @NgModule({
   declarations: [
@@ -49,7 +50,7 @@ import { CartComponent } from './cart/cart.component';
     MaterialModule,
     ReactiveFormsModule
   ],
-  providers: [],
+  providers: [AuthService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

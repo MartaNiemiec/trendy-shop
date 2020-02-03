@@ -2,21 +2,32 @@
   <button mat-icon-button class="toolbar__icon" routerLink="wishlist">
     <fa matBadge="1" matBadgeColor="accent" name="heart"></fa>
   </button>
-  <button mat-icon-button class="toolbar__icon" routerLink="cart" >
+  <button mat-icon-button class="toolbar__icon" routerLink="cart">
     <fa matBadge="3" matBadgeColor="accent" name="shopping-cart"></fa>
   </button>
   <button mat-icon-button [matMenuTriggerFor]="userMenu" class="toolbar__icon">
     <fa name="user"></fa>
   </button>
   <mat-menu #userMenu="matMenu" color="primary">
-    <button mat-menu-item color="primary" routerLink="login" class="menu-item">
-      <!-- <!-- <fa name="sign-in"></!-->
-      <span> Login</span>
-    </button>
-    <button mat-menu-item routerLink="signup" class="menu-item">
-      <!-- <fa name="user-plus"></fa> -->
-      <span> Sign Up</span>
-    </button>
+    <span *ngIf="!isAuth">
+      <button mat-menu-item color="primary" routerLink="login" class="menu-item">
+        <!-- <fa name="sign-in"></fa> -->
+        <span> Login</span>
+      </button>
+      <button mat-menu-item routerLink="signup" class="menu-item">
+        <!-- <fa name="user-plus"></fa> -->
+        <span> Sign Up</span>
+      </button>
+    </span>
+    <span *ngIf="isAuth">
+
+      <span class="menu-user"> user@email.com</span>
+      <button mat-menu-item class="menu-item">
+        <!-- <fa name="user-plus"></fa> -->
+        <span>Log out</span>
+      </button>
+    </span>
+
   </mat-menu>
 
 </div>
