@@ -15,17 +15,23 @@
     <span class="menu__sale">sale</span>
   </a>
   <a mat-list-item routerLink="/wishlist" routerLinkActive="active-link" (click)="onClose()" class="menu-item">
-      <!-- <!-- <fa name="heart"></fa> -->
-      <span>wishlist</span>
+    <!-- <fa name="heart"></fa> -->
+    <span>wishlist</span>
   </a>
   <a mat-list-item routerLink="/cart" routerLinkActive="active-link" (click)="onClose()" class="menu-item">
     <!-- <fa name="shopping-cart"></fa> -->
-      <span>cart</span>
+    <span>cart</span>
   </a>
-  <a mat-list-item routerLink="/login" routerLinkActive="active-link" (click)="onClose()" class="menu-item">
-    <span >login</span>
+  <a mat-list-item routerLink="/login" routerLinkActive="active-link" (click)="onClose()" class="menu-item"
+    *ngIf="!isAuth">
+    <span>login</span>
   </a>
-  <a mat-list-item routerLink="/signup" routerLinkActive="active-link" (click)="onClose()" class="menu-item">
+  <a mat-list-item routerLink="/signup" routerLinkActive="active-link" (click)="onClose()" class="menu-item"
+    *ngIf="!isAuth">
     <span>sign up</span>
+  </a>
+  <a mat-list-item routerLink="/signup" routerLinkActive="active-link" (click)="onClose()" class="menu-item"
+    *ngIf="isAuth">
+    <span>log out</span>
   </a>
 </mat-nav-list>

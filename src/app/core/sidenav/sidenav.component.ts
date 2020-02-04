@@ -1,5 +1,7 @@
+import { Component, OnInit, Output, EventEmitter, OnDestroy } from '@angular/core';
+import { AuthService } from 'src/app/auth/auth.service';
 import { ActivatedRoute } from '@angular/router';
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-sidenav',
@@ -7,21 +9,30 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./sidenav.component.scss']
 })
 
-export class SidenavComponent implements OnInit {
+export class SidenavComponent implements OnInit, OnDestroy {
   @Output() closeSidenav = new EventEmitter<void>();
   activeRoute: string;
+  isAuth = false;
+  authSubscription: Subscription;
 
-  constructor(public route: ActivatedRoute) {
+  constructor(public route: ActivatedRoute, private authService: AuthService) {
     this.route.url.subscribe(params => {
       this.activeRoute = params[0].path;
     })
   }
 
   ngOnInit() {
+    this.authService.authChange.subscribe(authStatus => {
+      this.isAuth = authStatus;
+    })
   }
 
   onClose() {
     this.closeSidenav.emit();
+  }
+
+  ngOnDestroy() {
+    this.authSubscription.unsubscribe();
   }
 
 }
