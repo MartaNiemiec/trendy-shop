@@ -22,7 +22,7 @@
     <span *ngIf="isAuth">
 
       <span class="menu-user"> user@email.com</span>
-      <button mat-menu-item class="menu-item">
+      <button mat-menu-item class="menu-item" (click)="onLogout()">
         <!-- <fa name="user-plus"></fa> -->
         <span>Log out</span>
       </button>
