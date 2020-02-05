@@ -22,6 +22,7 @@ import { SidenavComponent } from './core/sidenav/sidenav.component';
 import { WishlistComponent } from './wishlist/wishlist.component';
 import { CartComponent } from './cart/cart.component';
 import { AuthService } from './auth/auth.service';
+import { ProductsService } from './products/productsService.service';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,7 @@ import { AuthService } from './auth/auth.service';
     MaterialModule,
     ReactiveFormsModule
   ],
-  providers: [AuthService],
+  providers: [AuthService, ProductsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
