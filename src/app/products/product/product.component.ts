@@ -10,7 +10,7 @@ export class ProductComponent implements OnInit {
   productName: string;
   productNormalPrice: number;
   productReducedPrice?: number;
-  productImage: string
+  productImage: string;
 
   constructor() { }
 
@@ -20,4 +20,11 @@ export class ProductComponent implements OnInit {
     this.productReducedPrice = this.productObject.reducedPrice
   }
 
+  toggleWishlist() {
+    this.productObject.inWishlist = !this.productObject.inWishlist
+  }
+
+  toggleCart() {
+    this.productObject.inCart = !this.productObject.inCart
+  }
 }

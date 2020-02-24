@@ -14,16 +14,35 @@ export class ProductsService {
     salesArrays.map(array => {
       salesProducts = salesProducts.concat(array)
     })
-
     return this.availableProducts = salesProducts
+  }
+
+  getwishlistProducts(productsDepartment) {
+    let wishlistProducts = [];
+    let wishlistArrays = [];
+
+    productsDepartment === "wishlist"
+      // An array with reduced-price products from all departments
+      ? wishlistArrays = [...productsJson.productsData.map(department => department.products.filter(product => product.inWishlist === true))]
+      : wishlistArrays = [...productsJson.productsData.map(department => department.products.filter(product => product.inCart === true))]
+
+    // Concatenate every array from salesArrays into salesProducts array
+    wishlistArrays.map(array => {
+      wishlistProducts = wishlistProducts.concat(array)
+    })
+    return this.availableProducts = wishlistProducts
   }
 
   getProducts(productsDepartment) {
     // Display specific products depending on activeRoute
-    return productsDepartment === "sale"
-      ? this.getSalesProducts()
-      : this.availableProducts = [...productsJson.productsData.filter(dep => {
-        return dep.department === productsDepartment
-        })[0].products]
+    if (productsDepartment === "sale") {
+      return this.getSalesProducts()
+    } else if (productsDepartment === "wishlist" || productsDepartment === "cart") {
+      return this.getwishlistProducts(productsDepartment)
+    } else {
+      return this.availableProducts = [...productsJson.productsData.filter(department => {
+        return department.department === productsDepartment
+      })[0].products]
+    }
   }
 }

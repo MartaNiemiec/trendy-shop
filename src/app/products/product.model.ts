@@ -4,6 +4,6 @@ export interface Product {
   normalPrice: number,
   reducedPrice?: number,
   img: string,
-  inWishlist?: boolean,
-  inCart?: boolean
+  inWishlist: boolean,
+  inCart: boolean
 }

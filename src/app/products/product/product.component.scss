@@ -43,3 +43,8 @@ fa {
     transition: color .2s linear;
   }
 }
+
+.active {
+  color: mat-color($accent);
+  transition: color .2s linear;
+}
