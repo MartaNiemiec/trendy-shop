@@ -23,4 +23,8 @@ export class ProductsComponent implements OnInit {
   ngOnInit() {
     this.currentProducts = [...this.productsService.getProducts(this.activeRoute)]
   }
+
+  onToggleProduct() {
+    return this.currentProducts = [...this.productsService.getProducts(this.activeRoute)]
+  }
 }

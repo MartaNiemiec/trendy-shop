@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-product',
@@ -7,6 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class ProductComponent implements OnInit {
   @Input() productObject;
+  @Output() toggleProduct = new EventEmitter<object>();
   productName: string;
   productNormalPrice: number;
   productReducedPrice?: number;
@@ -22,9 +23,11 @@ export class ProductComponent implements OnInit {
 
   toggleWishlist() {
     this.productObject.inWishlist = !this.productObject.inWishlist
+    this.toggleProduct.emit(this.productObject);
   }
 
   toggleCart() {
     this.productObject.inCart = !this.productObject.inCart
+    this.toggleProduct.emit(this.productObject);
   }
 }

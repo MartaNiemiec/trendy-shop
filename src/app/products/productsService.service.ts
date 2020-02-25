@@ -45,4 +45,8 @@ export class ProductsService {
       })[0].products]
     }
   }
+
+  updateProducts() {
+    return this.availableProducts;
+  }
 }

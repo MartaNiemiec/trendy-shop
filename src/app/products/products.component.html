@@ -8,6 +8,6 @@
     <a routerLink="/sale" routerLinkActive="active-link"><li class="menu__sale">sale</li></a>
   </ul>
   <span class="products__list" fxLayout="row wrap" fxLayoutAlign="center start">
-    <app-product *ngFor="let product of currentProducts" [productObject]="product"></app-product>
+    <app-product *ngFor="let product of currentProducts" [productObject]="product" (toggleProduct)="onToggleProduct()"></app-product>
   </span>
 </div>
