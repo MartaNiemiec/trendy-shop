@@ -8,7 +8,7 @@
     <a routerLink="/sale" routerLinkActive="active-link"><li class="menu__sale">sale</li></a>
   </ul>
   <span class="products__list" fxLayout="row wrap" fxLayoutAlign="center start">
-    <p class="products__empty-list" *ngIf="isNoProducts; else displayProducts"> Sorry, your {{activeRoute}} is empty.</p>
+    <p class="products__empty-list" *ngIf="areNoProducts; else displayProducts"> Sorry, your {{activeRoute}} is empty.</p>
     <app-product #displayProducts *ngFor="let product of currentProducts" [productObject]="product" (toggleProduct)="onToggleProduct()"></app-product>
   </span>
 </div>

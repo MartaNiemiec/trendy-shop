@@ -13,7 +13,7 @@ import { Product } from './product.model'
 export class ProductsComponent implements OnInit {
   activeRoute: string;
   currentProducts: Product[] = [];
-  isNoProducts: boolean;
+  areNoProducts: boolean;
 
   constructor(public route: ActivatedRoute, private productsService: ProductsService) {
     this.route.url.subscribe(params => {
@@ -21,12 +21,18 @@ export class ProductsComponent implements OnInit {
     })
   }
 
+  checkAreNoProducts() {
+    this.currentProducts.length === 0 ? this.areNoProducts = true : this.areNoProducts = false;
+  }
+
   ngOnInit() {
     this.currentProducts = [...this.productsService.getProducts(this.activeRoute)]
-    this.currentProducts.length === 0 ? this.isNoProducts = true : this.isNoProducts = false;
+    this.checkAreNoProducts();
   }
 
   onToggleProduct() {
-    return this.currentProducts = [...this.productsService.getProducts(this.activeRoute)]
+    return this.currentProducts = [...this.productsService.getProducts(this.activeRoute)],
+      this.productsService.getNumberOfProducts(),
+      this.checkAreNoProducts();
   }
 }

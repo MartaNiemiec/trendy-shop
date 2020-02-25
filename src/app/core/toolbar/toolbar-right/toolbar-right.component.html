@@ -1,9 +1,15 @@
 <div class="toolbar-right" fxHide.xs>
   <button mat-icon-button class="toolbar__icon" routerLink="wishlist">
-    <fa matBadge="1" matBadgeColor="accent" name="heart"></fa>
+    <fa [matBadge]="this.productsService.numberOfWishlistProducts"
+        [matBadgeHidden]="this.productsService.numberOfWishlistProducts === 0"
+        matBadgeColor="accent"
+        name="heart"></fa>
   </button>
   <button mat-icon-button class="toolbar__icon" routerLink="cart">
-    <fa matBadge="3" matBadgeColor="accent" name="shopping-cart"></fa>
+    <fa [matBadge]="this.productsService.numberOfCartProducts"
+        [matBadgeHidden]="this.productsService.numberOfCartProducts === 0"
+        matBadgeColor="accent"
+        name="shopping-cart"></fa>
   </button>
   <button mat-icon-button [matMenuTriggerFor]="userMenu" class="toolbar__icon">
     <fa name="user"></fa>
@@ -27,7 +33,5 @@
         <span>Log out</span>
       </button>
     </span>
-
   </mat-menu>
-
 </div>

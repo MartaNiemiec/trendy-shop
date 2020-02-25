@@ -3,6 +3,8 @@ import productsJson from '../../assets/products.json'
 
 export class ProductsService {
   availableProducts: Product[] = [];
+  numberOfCartProducts: number;
+  numberOfWishlistProducts: number;
 
   getSalesProducts() {
     let salesProducts = [];
@@ -22,15 +24,21 @@ export class ProductsService {
     let wishlistArrays = [];
 
     productsDepartment === "wishlist"
-      // An array with reduced-price products from all departments
+      // An array with in wishlist products
       ? wishlistArrays = [...productsJson.productsData.map(department => department.products.filter(product => product.inWishlist === true))]
+      // An array with in cart products
       : wishlistArrays = [...productsJson.productsData.map(department => department.products.filter(product => product.inCart === true))]
 
-    // Concatenate every array from salesArrays into salesProducts array
+    // Concatenate every array from products Arrays into new productsArray
     wishlistArrays.map(array => {
       wishlistProducts = wishlistProducts.concat(array)
     })
     return this.availableProducts = wishlistProducts
+  }
+
+  getNumberOfProducts() {
+    this.numberOfCartProducts = this.getwishlistProducts("cart").length;
+    this.numberOfWishlistProducts = this.getwishlistProducts("wishlist").length;
   }
 
   getProducts(productsDepartment) {
@@ -44,9 +52,5 @@ export class ProductsService {
         return department.department === productsDepartment
       })[0].products]
     }
-  }
-
-  updateProducts() {
-    return this.availableProducts;
   }
 }
