@@ -13,6 +13,7 @@ import { Product } from './product.model'
 export class ProductsComponent implements OnInit {
   activeRoute: string;
   currentProducts: Product[] = [];
+  isNoProducts: boolean;
 
   constructor(public route: ActivatedRoute, private productsService: ProductsService) {
     this.route.url.subscribe(params => {
@@ -22,6 +23,7 @@ export class ProductsComponent implements OnInit {
 
   ngOnInit() {
     this.currentProducts = [...this.productsService.getProducts(this.activeRoute)]
+    this.currentProducts.length === 0 ? this.isNoProducts = true : this.isNoProducts = false;
   }
 
   onToggleProduct() {
