@@ -6,39 +6,37 @@ export class ProductsService {
   numberOfCartProducts: number;
   numberOfWishlistProducts: number;
 
-  getSalesProducts() {
-    let salesProducts = [];
-
-    // An array with reduced-price products from all departments
-    let salesArrays = [...productsJson.productsData.map(department => department.products.filter(product => product.reducedPrice))]
-
-    // Concatenate every array from salesArrays into salesProducts array
-    salesArrays.map(array => {
-      salesProducts = salesProducts.concat(array)
-    })
-    return this.availableProducts = salesProducts
+  // Return an array with specific products from all departments
+  getProductsData(productKey) {
+    return [...productsJson.productsData.map(department => department.products.filter(product => product[productKey]))];
   }
 
-  getwishlistProducts(productsDepartment) {
-    let wishlistProducts = [];
-    let wishlistArrays = [];
+  // Concatenate every array from previousArray into newArray
+  concatenateArray(previousArray, newArray) {
+    previousArray.map(array => newArray = newArray.concat(array))
+    return newArray;
+  }
+
+  getSalesProducts() {
+    let salesProducts = [];
+    let salesArrays = this.getProductsData("reducedPrice")
+    return this.availableProducts = this.concatenateArray(salesArrays, salesProducts)
+  }
+
+  getUserProducts(productsDepartment) {
+    let userProducts = [];
+    let userArrays = [];
 
     productsDepartment === "wishlist"
-      // An array with in wishlist products
-      ? wishlistArrays = [...productsJson.productsData.map(department => department.products.filter(product => product.inWishlist === true))]
-      // An array with in cart products
-      : wishlistArrays = [...productsJson.productsData.map(department => department.products.filter(product => product.inCart === true))]
+      ? userArrays = this.getProductsData("inWishlist")
+      : userArrays = this.getProductsData("inCart")
 
-    // Concatenate every array from products Arrays into new productsArray
-    wishlistArrays.map(array => {
-      wishlistProducts = wishlistProducts.concat(array)
-    })
-    return this.availableProducts = wishlistProducts
+    return this.availableProducts = this.concatenateArray(userArrays, userProducts)
   }
 
   getNumberOfProducts() {
-    this.numberOfCartProducts = this.getwishlistProducts("cart").length;
-    this.numberOfWishlistProducts = this.getwishlistProducts("wishlist").length;
+    this.numberOfCartProducts = this.getUserProducts("cart").length;
+    this.numberOfWishlistProducts = this.getUserProducts("wishlist").length;
   }
 
   getProducts(productsDepartment) {
@@ -46,7 +44,7 @@ export class ProductsService {
     if (productsDepartment === "sale") {
       return this.getSalesProducts()
     } else if (productsDepartment === "wishlist" || productsDepartment === "cart") {
-      return this.getwishlistProducts(productsDepartment)
+      return this.getUserProducts(productsDepartment)
     } else {
       return this.availableProducts = [...productsJson.productsData.filter(department => {
         return department.department === productsDepartment

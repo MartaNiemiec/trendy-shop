@@ -21,13 +21,8 @@ export class ProductComponent implements OnInit {
     this.productReducedPrice = this.productObject.reducedPrice
   }
 
-  toggleWishlist() {
-    this.productObject.inWishlist = !this.productObject.inWishlist
-    this.toggleProduct.emit(this.productObject);
-  }
-
-  toggleCart() {
-    this.productObject.inCart = !this.productObject.inCart
+  onToggleProduct(productKey) {
+    this.productObject[productKey] = !this.productObject[productKey]
     this.toggleProduct.emit(this.productObject);
   }
 }

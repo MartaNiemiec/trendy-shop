@@ -13,8 +13,8 @@
     </span>
 
     <div class="buttons">
-      <button><fa name="heart" (click)="toggleWishlist()" [ngClass]="{'active': productObject.inWishlist}"></fa></button>
-      <button><fa name="shopping-cart" (click)="toggleCart()" [ngClass]="{'active': productObject.inCart}"></fa></button>
+      <button><fa name="heart" (click)="onToggleProduct('inWishlist')" [ngClass]="{'active': productObject.inWishlist}"></fa></button>
+      <button><fa name="shopping-cart" (click)="onToggleProduct('inCart')" [ngClass]="{'active': productObject.inCart}"></fa></button>
     </div>
   </div>
 </mat-card>

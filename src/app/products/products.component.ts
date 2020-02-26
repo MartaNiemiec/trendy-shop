@@ -9,7 +9,6 @@ import { Product } from './product.model'
   styleUrls: ['./products.component.scss']
 })
 
-
 export class ProductsComponent implements OnInit {
   activeRoute: string;
   currentProducts: Product[] = [];
@@ -22,16 +21,22 @@ export class ProductsComponent implements OnInit {
   }
 
   checkAreNoProducts() {
-    this.currentProducts.length === 0 ? this.areNoProducts = true : this.areNoProducts = false;
+    this.currentProducts.length === 0
+      ? this.areNoProducts = true
+      : this.areNoProducts = false;
+  }
+
+  updateCurrentProducts() {
+    return [...this.productsService.getProducts(this.activeRoute)]
   }
 
   ngOnInit() {
-    this.currentProducts = [...this.productsService.getProducts(this.activeRoute)]
+    this.currentProducts = this.updateCurrentProducts()
     this.checkAreNoProducts();
   }
 
   onToggleProduct() {
-    return this.currentProducts = [...this.productsService.getProducts(this.activeRoute)],
+    return this.currentProducts = this.updateCurrentProducts(),
       this.productsService.getNumberOfProducts(),
       this.checkAreNoProducts();
   }
