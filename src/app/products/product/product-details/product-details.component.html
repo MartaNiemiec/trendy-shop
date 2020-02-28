@@ -1,0 +1,47 @@
+<mat-dialog-content fxLayout="row">
+  <img class="product__image" src="../../../assets/images/products/{{passedData.img}}" alt={{passedData.name}}>
+  <div class="product__content" fxLayout="column">
+    <div>
+      <h1 class="product__name">{{ productName }}</h1>
+      <p *ngIf="passedData.reducedPrice">
+        <span class="product__price--reduced">${{ passedData.reducedPrice.toFixed(2) }}</span>
+        <span class="product__price--previous">${{ passedData.normalPrice.toFixed(2) }}</span>
+      </p>
+      <p *ngIf="!passedData.reducedPrice">
+        <span class="product__price--normal">${{ passedData.normalPrice.toFixed(2) }}</span>
+      </p>
+    </div>
+    <form fxLayout="column">
+      <mat-form-field>
+        <mat-label>Size</mat-label>
+        <select matNativeControl required>
+          <option value="XS">XS</option>
+          <option value="S">S</option>
+          <option value="M">M</option>
+          <option value="L">L</option>
+          <option value="XL">XL</option>
+          <option value="XXL">XXL</option>
+        </select>
+      </mat-form-field>
+      <mat-form-field class="example-full-width">
+        <mat-label>Quantity</mat-label>
+        <input matInput placeholder="1" value="1" required>
+      </mat-form-field>
+      <div class="buttons">
+        <button class="button-action">
+          <fa name="heart" (click)="onToggleProduct('inWishlist')" [ngClass]="{'active': passedData.inWishlist}"></fa>
+          <span>TO WISHLIST</span>
+        </button>
+        <button class="button-action">
+          <fa name="shopping-cart" (click)="onToggleProduct('inCart')" [ngClass]="{'active': passedData.inCart}"></fa>
+          <span>TO CART</span>
+        </button>
+      </div>
+    </form>
+  </div>
+
+
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-flat-button color="primary" mat-dialog-close>Cancel</button>
+</mat-dialog-actions>

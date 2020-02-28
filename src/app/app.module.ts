@@ -14,7 +14,7 @@ import { FooterComponent } from './core/footer/footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './products/product/product.component';
-import { ProductInfoComponent } from './products/product/product-info/product-info.component';
+import { ProductDetailsComponent } from './products/product/product-details/product-details.component';
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
 import { ToolbarRightComponent } from './core/toolbar/toolbar-right/toolbar-right.component';
@@ -33,7 +33,7 @@ import { ProductsService } from './products/productsService.service';
     FooterComponent,
     ProductsComponent,
     ProductComponent,
-    ProductInfoComponent,
+    ProductDetailsComponent,
     SignupComponent,
     LoginComponent,
     ToolbarRightComponent,
@@ -49,9 +49,10 @@ import { ProductsService } from './products/productsService.service';
     FlexLayoutModule,
     FormsModule,
     MaterialModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
   providers: [AuthService, ProductsService],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ProductDetailsComponent]
 })
 export class AppModule { }

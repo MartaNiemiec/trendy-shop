@@ -1,5 +1,5 @@
 <mat-card class="product">
-  <img class="product__image" src="../../../assets/images/products/{{productObject.img}}" alt="White dress photo">
+  <img (click)="showProductDetails()" (toggleProduct)="onToggleProduct()" class="product__image" src="../../../assets/images/products/{{productObject.img}}" alt="White dress photo">
   <div class="product__content" fxLayout fxLayoutAlign="space-between center">
     <span>
       <p>{{ productName }}</p>
