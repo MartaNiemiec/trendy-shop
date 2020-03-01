@@ -14,12 +14,7 @@ import { FooterComponent } from './core/footer/footer.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { ProductsComponent } from './products/products.component';
 import { ProductComponent } from './products/product/product.component';
-<<<<<<< HEAD
 import { ProductDetailsComponent } from './products/product/product-details/product-details.component';
-||||||| merged common ancestors
-import { ProductInfoComponent } from './products/product/product-info/product-info.component';
-=======
->>>>>>> 5cbec411058f923dd18e9bdffd804e257d5adfb8
 import { SignupComponent } from './auth/signup/signup.component';
 import { LoginComponent } from './auth/login/login.component';
 import { ToolbarRightComponent } from './core/toolbar/toolbar-right/toolbar-right.component';
@@ -38,12 +33,7 @@ import { ProductsService } from './products/productsService.service';
     FooterComponent,
     ProductsComponent,
     ProductComponent,
-<<<<<<< HEAD
     ProductDetailsComponent,
-||||||| merged common ancestors
-    ProductInfoComponent,
-=======
->>>>>>> 5cbec411058f923dd18e9bdffd804e257d5adfb8
     SignupComponent,
     LoginComponent,
     ToolbarRightComponent,
