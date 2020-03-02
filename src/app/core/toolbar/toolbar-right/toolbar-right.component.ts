@@ -12,7 +12,7 @@ export class ToolbarRightComponent implements OnInit, OnDestroy {
   isAuth = false;
   authSubscription: Subscription;
 
-  constructor(private authService: AuthService,private productsService: ProductsService) {}
+  constructor(private authService: AuthService,public productsService: ProductsService) {}
 
   ngOnInit() {
     this.authSubscription = this.authService.authChange.subscribe(authStatus => {

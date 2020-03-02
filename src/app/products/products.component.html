@@ -1,14 +1,28 @@
 <div class="products page-content">
   <h1 class="page-title" fxHide.gt-xs>{{ activeRoute }}</h1>
   <ul class="products__menu" fxLayout="row wrap" fxLayoutAlign="space-around center" fxHide.xs>
-    <a routerLink="/ladies" routerLinkActive="active-link"><li class="menu__ladies">ladies</li></a>
-    <a routerLink="/men" routerLinkActive="active-link"><li class="menu__men">men</li></a>
-    <a routerLink="/kids" routerLinkActive="active-link"><li class="menu__kids">kids</li></a>
-    <a routerLink="/home" routerLinkActive="active-link"><li class="menu__home">home</li></a>
-    <a routerLink="/sale" routerLinkActive="active-link"><li class="menu__sale">sale</li></a>
+    <a routerLink="/ladies" routerLinkActive="active-link">
+      <li class="menu__ladies">ladies</li>
+    </a>
+    <a routerLink="/men" routerLinkActive="active-link">
+      <li class="menu__men">men</li>
+    </a>
+    <a routerLink="/kids" routerLinkActive="active-link">
+      <li class="menu__kids">kids</li>
+    </a>
+    <a routerLink="/home" routerLinkActive="active-link">
+      <li class="menu__home">home</li>
+    </a>
+    <a routerLink="/sale" routerLinkActive="active-link">
+      <li class="menu__sale">sale</li>
+    </a>
   </ul>
   <span class="products__list" fxLayout="row wrap" fxLayoutAlign="center start">
-    <p class="products__empty-list" *ngIf="areNoProducts; else displayProducts"> Sorry, your {{activeRoute}} is empty.</p>
-    <app-product #displayProducts *ngFor="let product of currentProducts" [productObject]="product" (toggleProduct)="onToggleProduct()"></app-product>
+    <p class="products__empty-list" *ngIf="areNoProducts; else displayProducts"> Sorry, your {{activeRoute}} is empty.
+    </p>
+    <ng-template #displayProducts>
+      <app-product *ngFor="let product of currentProducts" [productObject]="product"
+        (toggleProduct)="onToggleProduct()"></app-product>
+    </ng-template>
   </span>
 </div>

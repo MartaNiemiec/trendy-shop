@@ -20,6 +20,12 @@ export class ProductsComponent implements OnInit {
     })
   }
 
+  ngOnInit() {
+    this.currentProducts = this.updateCurrentProducts()
+    this.checkAreNoProducts();
+    // return this.activeRoute;
+  }
+
   checkAreNoProducts() {
     this.currentProducts.length === 0
       ? this.areNoProducts = true
@@ -28,11 +34,6 @@ export class ProductsComponent implements OnInit {
 
   updateCurrentProducts() {
     return [...this.productsService.getProducts(this.activeRoute)]
-  }
-
-  ngOnInit() {
-    this.currentProducts = this.updateCurrentProducts()
-    this.checkAreNoProducts();
   }
 
   onToggleProduct() {
