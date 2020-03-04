@@ -10,27 +10,27 @@ export class LandingPageComponent implements OnInit {
     {
       id: 1,
       title: 'ladies',
-      image: '../../assets/images/ladies.jpg'
+      image: 'ladies.jpg'
     },
     {
       id: 2,
       title: 'men',
-      image: '../../assets/images/men.jpg'
+      image: 'men.jpg'
     },
     {
       id: 3,
       title: 'kids',
-      image: '../../assets/images/kids.jpg'
+      image: 'kids.jpg'
     },
     {
       id: 4,
       title: 'home',
-      image: '../../assets/images/home.jpg'
+      image: 'home.jpg'
     },
     {
       id: 5,
       title: 'sale',
-      image: '../../assets/images/sale.jpg'
+      image: 'sale.jpg'
     }
   ];
 
