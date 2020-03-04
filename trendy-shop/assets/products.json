@@ -1,0 +1,380 @@
+{
+  "productsData": [
+    {
+      "department": "ladies",
+      "products": [
+        {
+          "name": "blouse",
+          "normalPrice": 23.5,
+          "reducedPrice": 15.99,
+          "img": "blouse.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "white dress",
+          "normalPrice": 22.55,
+          "img": "white-dress.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "white blouse",
+          "normalPrice": 20.0,
+          "reducedPrice": 13.5,
+          "img": "blouse-white.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "casual dress",
+          "normalPrice": 21.49,
+          "reducedPrice": 15,
+          "img": "casual-dress.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "sweater",
+          "normalPrice": 24.55,
+          "reducedPrice": 14,
+          "img": "sweater.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "dark dress",
+          "normalPrice": 25.39,
+          "reducedPrice": 15.5,
+          "img": "dark-dress.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "denim jacket",
+          "normalPrice": 22.35,
+          "img": "denim-jacket2.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "green dress",
+          "normalPrice": 19.99,
+          "img": "green-dress.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "summer dress",
+          "normalPrice": 18.59,
+          "img": "summer-dress.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "yellow-jacket",
+          "normalPrice": 29.99,
+          "img": "yellow-jacket.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "denim jacket",
+          "normalPrice": 24.55,
+          "reducedPrice": 15.99,
+          "img": "denim-jacket.jpg",
+          "inWishlist": false,
+          "inCart": false
+        }
+      ]
+    },
+    {
+      "department": "men",
+      "products": [
+        {
+          "name": "black jeans",
+          "normalPrice": 26.55,
+          "reducedPrice": 19.5,
+          "img": "man-black-jeans.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "denim jacket",
+          "normalPrice": 24.99,
+          "img": "man-denim-jacket.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "denim retro jacket",
+          "normalPrice": 23.49,
+          "reducedPrice": 18,
+          "img": "man-denim-retro-jacket.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "plain denim jacket",
+          "normalPrice": 25.39,
+          "reducedPrice": 18.5,
+          "img": "man-denim-jacket-3.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "Light denim shirt",
+          "normalPrice": 19.6,
+          "img": "man-denim-shirt.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "flannel shirt",
+          "normalPrice": 18.49,
+          "reducedPrice": 13.5,
+          "img": "man-flannel-shirt.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "long sleeve shirt",
+          "normalPrice": 19.89,
+          "img": "man-long-sleeve-shirt.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "flowers t-shirt",
+          "normalPrice": 17,
+          "reducedPrice": 12.7,
+          "img": "man-tshirt-flowers.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "grey striped t-shirt",
+          "normalPrice": 15.5,
+          "img": "man-tshirt-grey.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "khaki t-shirt",
+          "normalPrice": 14.79,
+          "img": "man-tshirt-plain.jpg",
+          "inWishlist": false,
+          "inCart": false
+        }
+      ]
+    },
+    {
+      "department": "kids",
+      "products": [
+        {
+          "name": "blue sweatshirt",
+          "normalPrice": 18.29,
+          "reducedPrice": 13,
+          "img": "kids-blue-sweatshirt.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "blue stripped t-shirt",
+          "normalPrice": 15.59,
+          "reducedPrice": 9.5,
+          "img": "kids-boy-blue-stripped-tshirt.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "flannel shirt",
+          "normalPrice": 16.79,
+          "reducedPrice": 12,
+          "img": "kids-boy-flannel-shirt.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "green shirt",
+          "normalPrice": 11.49,
+          "img": "kids-boy-green-shirt.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "sweater",
+          "normalPrice": 15.39,
+          "img": "kids-boy-sweater.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "t-shirt",
+          "normalPrice": 11.29,
+          "reducedPrice": 8.5,
+          "img": "kids-boy-tshirt.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "denim blouse",
+          "normalPrice": 13.49,
+          "img": "kids-girl-denim-blouse.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "dress",
+          "normalPrice": 11.50,
+          "reducedPrice": 8,
+          "img": "kids-girl-dress.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "jeans",
+          "normalPrice": 15.59,
+          "reducedPrice": 11,
+          "img": "kids-girl-jeans.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "skirt",
+          "normalPrice": 14.55,
+          "reducedPrice": 10.5,
+          "img": "kids-girl-skirt.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "yellow hoodie",
+          "normalPrice": 13.19,
+          "reducedPrice": 9.5,
+          "img": "kids-girl-yellow-hoodie.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "white banana t-shirt",
+          "normalPrice": 10.29,
+          "img": "kids-girl-white-banana-tshirt.jpg",
+          "inWishlist": false,
+          "inCart": false
+        }
+      ]
+    },
+    {
+      "department": "home",
+      "products": [
+        {
+          "name": "blue pillow",
+          "normalPrice": 25.49,
+          "reducedPrice": 19.99,
+          "img": "home-blue-pillow.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "bonsai",
+          "normalPrice": 23.79,
+          "img": "home-bonsai.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "cactus pillow",
+          "normalPrice": 28.99,
+          "reducedPrice": 25,
+          "img": "home-cactus-pillow.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "clock",
+          "normalPrice": 35.55,
+          "reducedPrice": 31,
+          "img": "home-clock.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "colorful pillow",
+          "normalPrice": 22.65,
+          "img": "home-colorful-pillow.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "dark blanket",
+          "normalPrice": 39.89,
+          "reducedPrice": 35,
+          "img": "home-dark-blanket.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "deer pillow",
+          "normalPrice": 28.25,
+          "reducedPrice": 25,
+          "img": "home-deer-pillow.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "plant",
+          "normalPrice": 18.49,
+          "img": "home-plant.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "wood quote board",
+          "normalPrice": 14.45,
+          "reducedPrice": 11,
+          "img": "home-quote-board.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "quote board",
+          "normalPrice": 16.55,
+          "img": "home-quote-board2.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "wall calendar",
+          "normalPrice": 15,
+          "img": "home-wall-calendar.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "wall clock",
+          "normalPrice": 38.59,
+          "reducedPrice": 35,
+          "img": "home-wall-clock.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "striped blanket",
+          "normalPrice": 36.20,
+          "reducedPrice": 32,
+          "img": "home-white-striped-blanket.jpg",
+          "inWishlist": false,
+          "inCart": false
+        },
+        {
+          "name": "quote calendar",
+          "normalPrice": 11.39,
+          "img": "home-quote-calendar.jpg",
+          "inWishlist": false,
+          "inCart": false
+        }
+      ]
+    }
+  ]
+}
