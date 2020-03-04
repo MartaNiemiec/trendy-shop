@@ -1,7 +1,6 @@
 {
-  "name": "trendy-me",
+  "name": "trendy-shop",
   "version": "0.0.0",
-  "homepage": "https://martaniemiec.github.io/trendy-me/",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
